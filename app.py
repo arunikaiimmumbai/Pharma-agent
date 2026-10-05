@@ -39,8 +39,8 @@ if st.button("Run Financial & Strategic Analysis"):
     else:
         try:
             genai.configure(api_key=api_key)
-            # Using the high-performance Gemini 2.5 Flash model
-            model = genai.GenerativeModel('gemini-2.5-flash')
+            # Using the high-performance Gemini 3.8 Flash model
+            model = genai.GenerativeModel('gemini-3.8-flash')
 
             # --- 1. FETCH AUDITED FINANCIALS FROM NSE ---
             st.subheader(f"1. Verified Financial Data: {selected_company}")
